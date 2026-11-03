@@ -4,7 +4,7 @@
 
 ## Contexte
 
-✏️ *En cinq à huit phrases : qui utilise l'outil (son métier, son geste professionnel), son besoin, ce qu'il saisit, ce que le programme lui affiche, ce que l'outil ne fait pas.*
+La responsable d’une exploitation maraîchère pédagogique utilise cet outil pour enregistrer et suivre les activités réalisées sur ses parcelles. Son geste professionnel consiste à observer les parcelles, identifier les cultures et les interventions effectuées (semis, arrosage, désherbage). Elle saisit le nom de la parcelle, la culture, le type d’opération, la date et le coût. Le programme enregistre les informations, permet de rechercher une intervention, de consulter la liste des opérations et de calculer les dépenses par parcelle. Il affiche ainsi un résumé clair du suivi agricole. Cependant, il ne réalise pas les travaux agricoles et ne remplace pas l'observation humaine : il sert uniquement à gérer les informations.
 
 ## Prérequis et lancement
 
@@ -23,7 +23,7 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ✏️ *Cochez seulement ce qui marche : `- [x]`.*
 
-- [ ] Données lues et enregistrées dans `donnees/operations.json`
+- [x] Données lues et enregistrées dans `donnees/operations.json`
 - [ ] Ajouter une opération, saisies invalides refusées sans arrêter le programme
 - [ ] Lister les opérations, message si le registre est vide
 - [ ] Rechercher par identifiant ou par parcelle ; filtrer par culture
