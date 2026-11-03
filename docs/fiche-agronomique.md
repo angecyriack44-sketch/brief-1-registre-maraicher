@@ -24,7 +24,6 @@
 **Une donnée manquante** (revenus, quantité récoltée, surface, eau apportée…) et ce qu'on ne peut donc pas conclure : la quantité récoltée et les revenus obtenus après ventes sont manquantes
 
 **Pourquoi le total des coûts ne dit-il pas si l'exploitation est rentable ?**   car il permet de connaîtr les dépenses engagées pour les activités agricoles , mais ne permet pas de calculer la rentabilité à lui seul.
-
 Sources :  donnees/operation.json
 
  · Relu par le coach le : ✏️
