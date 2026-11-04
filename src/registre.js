@@ -67,12 +67,27 @@ export function verifierOperation(saisie, operations) {
 }
 
 // Fabrique l'opération à enregistrer à partir d'une saisie VALIDE : coutFCFA devient un nombre.
+
 export function creerOperation(saisie) {
-  throw new Error('TODO : coder creerOperation dans src/registre.js');
+  return {
+    id: saisie.id,
+    date: saisie.date,
+    parcelle: saisie.parcelle,
+    culture: saisie.culture,
+    operation: saisie.operation,
+    coutFCFA: Number(saisie.coutFCFA)
+  }
 }
+
 
 // Ajoute la saisie au registre si elle est valide (verifierOperation, puis creerOperation).
 // Renvoie les erreurs : [] si l'opération a été ajoutée ; sinon les messages, et rien n'est ajouté.
 export function ajouterOperation(operations, saisie) {
-  throw new Error('TODO : coder ajouterOperation dans src/registre.js');
+  const erreurs = verifierOperation(saisie, operations);
+  if (erreurs.length > 0) {
+    return erreurs;
+  }
+  const operation = creerOperation(saisie);
+  operations.push(operation);
+  return [];
 }
