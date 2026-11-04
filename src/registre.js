@@ -40,7 +40,30 @@ export function trouverParId(operations, id) {
 // obligatoires (n'importe quel texte non vide) · operation présente dans OPERATIONS
 // · coutFCFA nombre positif ou nul.
 export function verifierOperation(saisie, operations) {
-  throw new Error('TODO : coder verifierOperation dans src/registre.js');
+  const erreurs = [];
+  if (saisie.id === "") {
+    erreurs.push("L'identifiant est obligatoire");
+  }
+  else if (trouverParId(operations, saisie.id) !== undefined) {
+    erreurs.push("Cet identifiant existe déjà");
+  }
+  if (!estDateValide(saisie.date)) {
+    erreurs.push("La date doit être au format AAAA-MM-JJ");
+  }
+  if (saisie.parcelle === "") {
+    erreurs.push("La parcelle est obligatoire");
+  }
+  if (saisie.culture === "") {
+    erreurs.push("La culture est obligatoire");
+  }
+  if (!OPERATIONS.includes(saisie.operation)) {
+    erreurs.push("L'opération n'est pas valide");
+  }
+  const cout = Number(saisie.coutFCFA);
+  if (saisie.coutFCFA === "" || isNaN(cout) || cout < 0) {
+    erreurs.push("Le coût doit être un nombre positif ou nul");
+  }
+  return erreurs;
 }
 
 // Fabrique l'opération à enregistrer à partir d'une saisie VALIDE : coutFCFA devient un nombre.
