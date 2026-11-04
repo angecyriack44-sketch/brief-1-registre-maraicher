@@ -9,7 +9,7 @@ export function filtrerParParcelle(operations, parcelle) {
       resultat.push(operation);
     }
     else{
-      console.log("Cette opération ne correspond à la parcelle recherchée.");
+      console.log("Cette opération ne correspond  pas à la parcelle recherchée.");
     }
   }
   return resultat;
@@ -17,7 +17,16 @@ export function filtrerParParcelle(operations, parcelle) {
 
 // Renvoie un NOUVEAU tableau avec les opérations de cette culture (éventuellement vide).
 export function filtrerParCulture(operations, culture) {
-  throw new Error('TODO : coder filtrerParCulture dans src/recherche.js');
+  const resultat = [];
+  for(const operation of operations){
+    if(operation.culture === culture){
+      resultat.push(operation);
+    }
+    else{
+      console.log("Cette opération ne correspond pas à la culture recherchée.");
+    }
+  }
+  return resultat;
 }
 
 // Renvoie une COPIE triée par coût croissant, avec un comparateur numérique.
