@@ -58,6 +58,7 @@ export function modifierOperation(operations, id, champ, valeur) {
   }
   return [];
 }
+  
 
 // Renvoie une COPIE triée par coût décroissant : la plus chère d'abord.
 export function trierParCoutDecroissant(operations) {
@@ -91,3 +92,4 @@ return{
   total : totalMax
 };
 }
+
