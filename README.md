@@ -33,8 +33,15 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 - [x] Bonus : tri par coût décroissant, parcelle la plus coûteuse
 
 ## Données
+id : identifiant unique de l'opération 
+date : date de réalisation au format 
+parcelle : parcelle concernée 
+culture : culture concernée
+operation : type d'intervention réalisée
+coutFCFA : coût de l'intervention
 
-✏️ *Le fichier, le nombre d'opérations, les champs (voir [docs/dictionnaire-donnees.md](docs/dictionnaire-donnees.md)), les unités. Rappelez qu'elles sont fictives.*
+la date suit le format AAAA-MM-JJ
+le cout est compté en francCFA
 
 ## Limites
 
@@ -48,4 +55,6 @@ la sauvegarde  : il n'existe pas encore de système automatique de sauvegarde de
 
 ## Auteur
 
-✏️ *Prénom NOM, compte GitHub. Entraide : avec qui, sur quoi.*
+Prénom NOM : ANGE CYRIACK KOUTOUAN AKUI  (agritech junior)
+compte GitHub : https://github.com/angecyriack44-sketch/brief-1-registre-maraicher.git
+
