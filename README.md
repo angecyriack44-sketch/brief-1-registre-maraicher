@@ -24,13 +24,13 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 ✏️ *Cochez seulement ce qui marche : `- [x]`.*
 
 - [x] Données lues et enregistrées dans `donnees/operations.json`
-- [ ] Ajouter une opération, saisies invalides refusées sans arrêter le programme
-- [ ] Lister les opérations, message si le registre est vide
-- [ ] Rechercher par identifiant ou par parcelle ; filtrer par culture
-- [ ] Trier par coût ou par date
-- [ ] Synthèse : total, nombre et total par parcelle, coût minimum et maximum
-- [ ] Bonus : supprimer et modifier une opération (choix 6 et 7)
-- [ ] Bonus : tri par coût décroissant, parcelle la plus coûteuse
+- [x] Ajouter une opération, saisies invalides refusées sans arrêter le programme
+- [x] Lister les opérations, message si le registre est vide
+- [x] Rechercher par identifiant ou par parcelle ; filtrer par culture
+- [x] Trier par coût ou par date
+- [x] Synthèse : total, nombre et total par parcelle, coût minimum et maximum
+- [x] Bonus : supprimer et modifier une opération (choix 6 et 7)
+- [x] Bonus : tri par coût décroissant, parcelle la plus coûteuse
 
 ## Données
 
@@ -38,7 +38,9 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Limites
 
-✏️ *Au moins trois. Par exemple : le registre enregistre des dépenses, pas les revenus, il ne mesure donc pas la rentabilité.*
+la sécurité  est limitée : il n'y a pas de système de connexion ni de protection avancée des données.
+l'absence de fonctionnalitées assez importante : l'application permet de suivre les opérations et les dépenses, mais ne calcule pas encore les bénéfices, les rendements ou la rentabilité des cultures.
+la sauvegarde  : il n'existe pas encore de système automatique de sauvegarde des données.
 
 ## Documents
 
