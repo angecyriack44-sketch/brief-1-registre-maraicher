@@ -20,11 +20,11 @@
 
 | Action | Attendu | Obtenu | Testeur |
 | --- | --- | --- | --- |
-| ✏️ | | | |
-| ✏️ | | | |
-| ✏️ | | | |
-| ✏️ | | | |
-| ✏️ | | | |
-| ✏️ | | | |
+| ✏️ | Ajout de l'opération avec succès|Ajout de l'opération avec succès |Koffi Marc Olivier KOUAME |
+| ✏️ |affichage de la liste des opérations avec succès |affichage de la liste des opérations avec succès| Koffi Marc Olivier KOUAME|
+| ✏️ | Recherche d'opérations avec succès|Recherche d'opérations avec succès |Koffi Marc Olivier KOUAME |
+| ✏️ |Trie des opérations effectuée avec succès |Trie des opérations effectuée avec succès | Koffi Marc Olivier KOUAME|
+| ✏️ |Synthèse des dépenses afficher avec succès |Synthèse des dépenses afficher avec succès | Koffi Marc Olivier KOUAME|
+| ✏️ | Suppression d'opération avec succès|Suppression d'opération avec succès| Koffi Marc Olivier KOUAME|
 
 **Sur un autre poste** (`git clone`, `node app.js`, `npm test`, en suivant le README) : ✏️
