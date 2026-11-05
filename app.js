@@ -87,7 +87,7 @@ while (continuer) {
       break;
     
   }
-/*
+
     case "2":{
       const resultat = listerOperations(operations);
         console.log(resultat);
@@ -107,7 +107,7 @@ while (continuer) {
       break;
     }
 
-
+/*
       case "4" :{
         console.log("--- Trier les opérations ---");
         console.log("1. Trier par coût" );
