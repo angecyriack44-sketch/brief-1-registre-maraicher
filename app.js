@@ -63,7 +63,7 @@ while (continuer) {
     continuer = false;
     continue;
   }
-/*
+
   switch (choix) {
     case "1": {
       const saisie = {
@@ -87,7 +87,7 @@ while (continuer) {
       break;
     
   }
-
+/*
     case "2":{
       const resultat = listerOperations(operations);
         console.log(resultat);
