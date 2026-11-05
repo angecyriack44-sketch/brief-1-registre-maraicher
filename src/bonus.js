@@ -35,7 +35,7 @@ export function modifierOperation(operations, id, champ, valeur) {
     return["L'identifiant ne peut pas être modifié"];
   }
   if(!CHAMPS_MODIFIABLES.includes(champ)){
-    return["Champs non modifiable"];
+    return["Champ non modifiable"];
   }
   const saisie ={
     id: operation.id,
@@ -46,7 +46,14 @@ export function modifierOperation(operations, id, champ, valeur) {
   coutFCFA: String(operation.coutFCFA)
   }
   saisie[champ] = valeur;
-  const erreurs = verifierOperation(saisie, operations);
+  const autresOperations = [];
+  for (const autreOperation of operations){
+    if(autreOperation.id !== id){
+    
+  autresOperations.push(autreOperation);}
+    }
+  
+  const erreurs = verifierOperation(saisie, autresOperations);
   if(erreurs.length > 0){
     return erreurs;
   }
@@ -75,9 +82,13 @@ export function trierParCoutDecroissant(operations) {
 // Renvoie la parcelle dont le total des coûts est le plus élevé : { parcelle, total },
 // ou null si le registre est vide. En cas d'égalité : la première parcelle rencontrée.
 export function parcelleLaPlusCouteuse(operations) {
+  if(operations.length === 0){
+    return null;
+  }
   const synthese = syntheseParParcelle(operations);
   let parcelleMax ="";
   let totalMax = 0;
+  let premiereParcelle = true;
   for(const parcelle in synthese){
     const fiche = synthese[parcelle];
   
