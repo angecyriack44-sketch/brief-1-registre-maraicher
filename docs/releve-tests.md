@@ -20,11 +20,13 @@
 
 | Action | Attendu | Obtenu | Testeur |
 | --- | --- | --- | --- |
-| ✏️ | Ajout de l'opération avec succès|Ajout de l'opération avec succès |Koffi Marc Olivier KOUAME |
-| ✏️ |affichage de la liste des opérations avec succès |affichage de la liste des opérations avec succès| Koffi Marc Olivier KOUAME|
-| ✏️ | Recherche d'opérations avec succès|Recherche d'opérations avec succès |Koffi Marc Olivier KOUAME |
-| ✏️ |Trie des opérations effectuée avec succès |Trie des opérations effectuée avec succès | Koffi Marc Olivier KOUAME|
-| ✏️ |Synthèse des dépenses afficher avec succès |Synthèse des dépenses afficher avec succès | Koffi Marc Olivier KOUAME|
-| ✏️ | Suppression d'opération avec succès|Suppression d'opération avec succès| Koffi Marc Olivier KOUAME|
+|Ajout d'opération| Ajout de l'opération avec succès|Ajout de l'opération avec succès |Koffi Marc Olivier KOUAME |
+| afficher liste des opérations |affichage de la liste des opérations avec succès |affichage de la liste des opérations avec succès| Koffi Marc Olivier KOUAME|
+| recherche d'opération | Recherche d'opérations avec succès|Recherche d'opérations avec succès |Koffi Marc Olivier KOUAME |
+|trie des opération |Trie des opérations effectuée avec succès |Trie des opérations effectuée avec succès | Koffi Marc Olivier KOUAME|
+|synthèse |Synthèse des dépenses afficher avec succès |Synthèse des dépenses afficher avec succès | Koffi Marc Olivier KOUAME|
+|supprimer opération | Suppression d'opération avec succès|Suppression d'opération avec succès| Koffi Marc Olivier KOUAME|
 
-**Sur un autre poste** (`git clone`, `node app.js`, `npm test`, en suivant le README) : ✏️
+**Sur un autre poste** (`git clone`, `node app.js`, `npm test`, en suivant le README) : 
+node app.js: tous les tests proposés fonctionnent
+npm test:39 tests valides sur 39 tests proposés
