@@ -158,7 +158,7 @@ while (continuer) {
         console.log("Rappel : ce sont des dépenses, elle ne mesurent pas la rentabilité");
         break;
       }
-/*
+
       case "6": {
         const id = await demander("Identifiant :");
         const operation = supprimerOperation(operations, id.toUpperCase());
@@ -201,4 +201,3 @@ finally{
 }
 
 main();
-*/
