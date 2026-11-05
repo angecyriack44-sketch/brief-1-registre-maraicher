@@ -14,4 +14,10 @@
     aussi la recherche et la correction des érreurs surtout dans app.js 
     la solution qui s'offrait à moi était les tests répétés  car elles me permettaient de voir en quelques sortes 
     les différentes lignes de code qui pourrait probablement poser problème
-3. **L'entraide** (qui m'a aidé, qui j'ai aidé, sur quoi) : ✏️
+3. **L'entraide** (qui m'a aidé, qui j'ai aidé, sur quoi) : 
+
+         QUI M'A AIDE             |       SUR QUOI?                                  |
+                                  |                                                  |
+- TIEMOKO KOFFI MARIE CARMELLE    |   pour la compréhension de certaines fonctions   |
+- LIADE MARC HENOC                |   explication sur le comment démarrer le projet  |
+- KOUASSI KONAN ANGLOVIA          |   importation des fonctions pour les choix 3 et 4|
