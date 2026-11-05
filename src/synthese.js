@@ -32,5 +32,24 @@ return resultat;
 // Renvoie { min, max } des coûts, ou null si la liste est vide.
 // Exemple : { min: 1500, max: 8000 }
 export function coutMinMax(operations) {
-  throw new Error('TODO : coder coutMinMax dans src/synthese.js');
+  if(operations.length === 0){
+    return null;
+  }
+
+  let min = operations[0].coutFCFA;
+  let max = operations[0].coutFCFA;
+for(const operation of operations){
+  const cout = operation.coutFCFA;
+  if(cout < min){
+    min = cout;
+  }
+
+  if(cout > max){
+    max = cout;
+  }
+}
+  return{
+    min : min,
+    max : max
+  }
 }
