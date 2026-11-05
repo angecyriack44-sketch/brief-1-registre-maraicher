@@ -7,7 +7,7 @@ import { chargerJson, enregistrerJson } from './src/stockage.js';
 import { OPERATIONS, ajouterOperation, formaterOperation, listerOperations, trouverParId } from './src/registre.js';
 import { filtrerParCulture, filtrerParParcelle, trierParCout, trierParDate } from './src/recherche.js';
 import { coutMinMax, syntheseParParcelle, totalCouts } from './src/synthese.js';
-import { supprimerOperation, modifierOperation} from './src/bonus.js';
+import { supprimerOperation, modifierOperation, trierParCoutDecroissant} from './src/bonus.js';
 
 const FICHIER_DONNEES = 'donnees/operations.json';
  
@@ -112,6 +112,7 @@ while (continuer) {
         console.log("--- Trier les opérations ---");
         console.log("1. Trier par coût" );
         console.log("2. Trier par date" );
+        console.log("3. Trier par coût décroissant")
         const choixtri = await demander ("Votre choix : ");
         let resultat = [];
         if(choixtri ==="1"){
@@ -119,7 +120,9 @@ while (continuer) {
         }
         else if (choixtri ==="2"){
           resultat = trierParDate(operations);
-        
+        }
+        else if (choixtri === "3"){
+          resultat = trierParCoutDecroissant(operations);
         }
         else{
           console.log(" Le choix saisi est invalide.");
