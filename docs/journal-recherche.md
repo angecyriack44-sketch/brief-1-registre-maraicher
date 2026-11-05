@@ -4,6 +4,6 @@
 
 | Ce que je cherchais | Où | Ce que j'ai compris | Utilisé dans |
 | --- | --- | --- | --- |
-| ✏️ | | | |
-| ✏️ | | | |
-| ✏️ | | | |
+| comment parcourir un objet(for...in)| W3school et chatgpt| que l'élément pour parcourir un tableau etait différent de celui d'un objet| |
+| classer en ordre{sort()}|tuto youtube |on pouvait classer les éléments d'untableau selon l'ordre qu'on veut | |
+| suprimer un élément d'un tableau{splice()}|tuto youtube et IA |on peut supprimer un élément d'un tableau avec une fonction sans remonter à la déclaration de l'objet | |
