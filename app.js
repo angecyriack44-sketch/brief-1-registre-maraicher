@@ -17,7 +17,7 @@ const FICHIER_DONNEES = 'donnees/operations.json';
   console.log("       Exploitation Maraîchère pédagogique");
   console.log("==================================================");
   }
-  /*
+  
 function afficherMenu() {
   console.log("--------------------- MENU ---------------------");
   console.log("1. Ajouter une opération");
@@ -63,7 +63,7 @@ while (continuer) {
     continuer = false;
     continue;
   }
-
+/*
   switch (choix) {
     case "1": {
       const saisie = {
